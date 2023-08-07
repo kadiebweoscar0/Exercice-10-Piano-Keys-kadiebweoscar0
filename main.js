@@ -22,9 +22,14 @@ const highCKey = document.getElementById("high-c-key");
 function keyPlay(){
   ckey.addEventListener('mousedown', function (event){
     event.target.style.backgroundColor = 'crimson';
-  })
+  });
 }
 
+function KeyReturn (){
+  ckey.addEventListener('mouseup', function (event){
+    event.target.style.backgroundColor = '';
+  });
+}
 // Write a loop that runs the array elements through the function
 
 
