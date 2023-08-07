@@ -89,6 +89,12 @@ function KeyReturn(){
     event.target.style.backgroundColor = '';
   });
 };
+
+//create a function addEventTouch
+function addEventTouch(note) {
+  note.addEventListener('mousedown', keyPlay())
+  note.addEventListener('mouseup', KeyReturn())
+}
 // Write a loop that runs the array elements through the function
 
 
