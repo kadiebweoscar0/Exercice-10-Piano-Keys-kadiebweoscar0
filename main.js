@@ -19,17 +19,76 @@ const bkey = document.getElementById("b-key");
 const highCKey = document.getElementById("high-c-key");
 
 // Write a named function with event handler properties
+//create a function KeyPlay
 function keyPlay(){
   ckey.addEventListener('mousedown', function (event){
     event.target.style.backgroundColor = 'crimson';
   });
-}
+  
+  dkey.addEventListener('mousedown', function (event){
+    event.target.style.backgroundColor = 'crimson';
+  });
+  
+  ekey.addEventListener('mousedown', function (event){
+    event.target.style.backgroundColor = 'crimson';
+  });
+  
+  fkey.addEventListener('mousedown', function (event){
+    event.target.style.backgroundColor = 'crimson';
+  });
+  
+  gkey.addEventListener('mousedown', function (event){
+    event.target.style.backgroundColor = 'crimson';
+  });
+  
+  akey.addEventListener('mousedown', function (event){
+    event.target.style.backgroundColor = 'crimson';
+  });
+  
+  bkey.addEventListener('mousedown', function (event){
+    event.target.style.backgroundColor = 'crimson';
+  });
+  
+  highCKey.addEventListener('mousedown', function (event){
+    event.target.style.backgroundColor = 'crimson';
+  });
+  
+};
 
-function KeyReturn (){
+//Create a function KeyReturn
+function KeyReturn(){
   ckey.addEventListener('mouseup', function (event){
     event.target.style.backgroundColor = '';
   });
-}
+  
+  dkey.addEventListener('mouseup', function (event){
+    event.target.style.backgroundColor = '';
+  });
+  
+  ekey.addEventListener('mouseup', function (event){
+    event.target.style.backgroundColor = '';
+  });
+  
+  fkey.addEventListener('mouseup', function (event){
+    event.target.style.backgroundColor = '';
+  });
+  
+  gkey.addEventListener('mouseup', function (event){
+    event.target.style.backgroundColor = '';
+  });
+  
+  akey.addEventListener('mouseup', function (event){
+    event.target.style.backgroundColor = '';
+  });
+  
+  bkey.addEventListener('mouseup', function (event){
+    event.target.style.backgroundColor = '';
+  });
+  
+  highCKey.addEventListener('mouseup', function (event){
+    event.target.style.backgroundColor = '';
+  });
+};
 // Write a loop that runs the array elements through the function
 
 
