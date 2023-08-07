@@ -8,8 +8,21 @@ keys.forEach(function(key){
 })
 
 // Write named functions that change the color of the keys below
+const ckey = document.getElementById("c-key");
+const dkey = document.getElementById("d-key");
+const ekey = document.getElementById("e-key");
+const fkey = document.getElementById("f-key");
+const gkey = document.getElementById("g-key");
+const akey = document.getElementById("a-key");
+const bkey = document.getElementById("b-key");
+const highCKey = document.getElementById("high-c-key");
 
 
+function keyPlay(event){
+  event.target.ckey.addEventListener('mousedown', function (event){
+    ckey.style.backgroundColor = 'crimson';
+  })
+}
 // Write a named function with event handler properties
 
 
