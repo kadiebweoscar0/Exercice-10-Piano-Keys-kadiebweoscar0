@@ -14,21 +14,21 @@ let keynotes = document.querySelectorAll('.keynote');
 //create loop forEach and function change color parent when onclick child
 blackKeynotes.forEach(function(blackKeynote){
   blackKeynote.addEventListener('mousedown', ()=> {
-    blackKeynote.parentNode.style.color = 'crimson';
+    blackKeynote.parentNode.style.backgroundColor = 'crimson';
   });
 
   blackKeynote.addEventListener('mouseup', ()=> {
-    blackKeynote.parentNode.style.color = '';
+    blackKeynote.parentNode.style.backgroundColor = '';
   })
 })
 
 keynotes.forEach(function(keynote){
   keynote.addEventListener('mousedown', ()=> {
-    keynote.parentNode.style.color = 'crimson';
+    keynote.parentNode.style.backgroundColor = 'crimson';
   });
 
   keynote.addEventListener('mouseup', ()=> {
-    keynote.parentNode.style.color = ''
+    keynote.parentNode.style.backgroundColor = ''
   })
 })
 
