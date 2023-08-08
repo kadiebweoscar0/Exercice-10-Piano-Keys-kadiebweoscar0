@@ -9,16 +9,12 @@ keys.forEach(function(key){
 
 // Write named functions that change the color of the keys below
 function keyPlay(e){
-  e.addEventListener('mousedown', function (){
     e.target.style.backgroundColor = 'crimson';
-  });
 };
 
 // Write a named function with event handler properties
 function keyReturn(e){
-  e.addEventListener('mouseup', function (){
     e.target.style.backgroundColor = '';
-  });
 };
 
 //create a function addEventTouch
@@ -57,7 +53,7 @@ startOver.hidden= true;
 startOver.onclick = function() {
   nextOne.hidden = false;
   startOver.hidden = true;
-   document.getElementById('word-one').innerHTML = 'HAP-';
+  document.getElementById('word-one').innerHTML = 'HAP-';
   document.getElementById('letter-note-one').innerHTML = 'G';
   document.getElementById('word-two').innerHTML = 'PY';
   document.getElementById('letter-note-two').innerHTML = 'G';
