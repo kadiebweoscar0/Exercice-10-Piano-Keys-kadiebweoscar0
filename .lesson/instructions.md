@@ -10,7 +10,7 @@ You’re a web developer who has been hired by a music education company. This c
 
 
 3. Now that you have created two functions that change the color of the key elements, you must assign them as the values of event handler properties.
-<br>Create a named function and leave the code block blank for now. This function will be used later on to assign events to the keys, so it should take one parameter — you can call it note.
+<br>Create a named function and leave the code block blank for now. This function will be used later on to assign events to the keys, so it should take one parameter — you can call it *`note`*.
 4. Inside the function, create an event handler that runs the `keyPlay` as an event handler when a `mousedown` event fires on any note.
 5. Inside the function, create a second event handler property that runs the `keyReturn` when a `mouseup` event fires on any note.
 6. At the beginning of the code, we have variable name assignments for the keys array and the empty notes array. There is also a function looping through the keys array and pushing the keys elements to the notes array to be assigned a variable name.
@@ -27,29 +27,29 @@ You’re a web developer who has been hired by a music education company. This c
 10. Next, a click event firing on the `nextOne` must change the music notes that guide the piano student through the song.
 <br>Add the following changes to the `nextOne` event handler function so the musical notes change when the button is clicked.
 
-    * Change the content of the element with an ID of letter-note-five to D.
-    - Change the content of the element with an ID of letter-note-six to C.
-11. Create another event handler property with a click event on the button element called nextTwo. Then assign the property to the value of an anonymous event handler function.
-12. Make the following changes to the button that appears when nextTwo is clicked:
+    * Change the content of the element with an ID of `letter-note-five` to D.
+    - Change the content of the element with an ID of `letter-note-six` to C.
+11. Create another event handler property with a click event on the button element called `nextTwo`. Then assign the property to the value of an anonymous event handler function.
+12. Make the following changes to the button that appears when `nextTwo` is clicked:
 
     * Reveal the `nextThree` button by changing the `.hidden` property to make the `nextThree` button appear.
     * Hide the `nextTwo` button by changing the `.hidden` property to hide the `nextTwo` button.
 13. Once the student has reached this point of the Happy Birthday song the lyrics changes from HAP-PY BIRTH-DAY TO YOU to HAP-PY BIRTH-DAY DEAR FRI-END.
 <br>Make the following changes to the lyrics in the function when the button is clicked:
-    * Change the content of the element with an ID of word-five to DEAR.
-    * Change the content of the element with an ID of word-six to FRI-.
+    * Change the content of the element with an ID of `word-five` to DEAR.
+    * Change the content of the element with an ID of `word-six` to FRI-.
 14. Now you have the lyrics HAP-PY BIRTH-DAY DEAR FRI-. To finish the line, you must add the -END to the song box under the piano.
 <br>The -END element is stored in the lastLyric variable.
-<br>Add a statement to the event handler function for nextTwo that changes the display property of lastLyric to 'inline-block'.
+<br>Add a statement to the event handler function for nextTwo that changes the display property of lastLyric to `'inline-block'`.
 15. A click event firing on the second button must also change the music notes to guide the piano student through the song.
-<br>Add the following changes to the nextTwo event handler function so the musical notes change when the button is clicked:
+<br>Add the following changes to the `nextTwo` event handler function so the musical notes change when the button is clicked:
     * Change the content of the element with an ID of letter-note-three to G.
     * Change the content of the element with an ID of letter-note-four to E.
     * Change the content of the element with an ID of letter-note-five to C.
     * Change the content of the element with an ID of letter-note-six to B.
 16. Create an event handler property with a click event on the nextThree element.
 17. Using an anonymous event handler function, make the following changes to the button that appears when `nextThree` is clicked:
-    * Reveal the startOver button by changing the .hidden property to make the strtOver button appear.
+    * Reveal the `startOver` button by changing the .hidden property to make the `startOver` button appear.
     * Hide the `nextThree` button by changing the `.hidden` property to hide the `nextThree` button.
 18. Add the following changes to the `nextThree` event handler function so the lyrics change when this button is clicked.
     * Change the content of the element with an ID of word-one to HAP-.
