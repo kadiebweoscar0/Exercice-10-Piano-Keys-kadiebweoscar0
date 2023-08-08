@@ -7,6 +7,31 @@ keys.forEach(function(key){
   notes.push(document.getElementById(key));
 })
 
+//select the class black-keynote and keynote
+let blackKeynotes = document.querySelectorAll('.black-keynote');
+let keynotes = document.querySelectorAll('.keynote');
+
+//create loop forEach and function change color parent when onclick child
+blackKeynotes.forEach(function(blackKeynote){
+  blackKeynote.addEventListener('mousedown', ()=> {
+    blackKeynote.parentNode.style.color = 'crimson';
+  });
+
+  blackKeynote.addEventListener('mouseup', ()=> {
+    blackKeynote.parentNode.style.color = '';
+  })
+})
+
+keynotes.forEach(function(keynote){
+  keynote.addEventListener('mousedown', ()=> {
+    keynote.parentNode.style.color = 'crimson';
+  });
+
+  keynote.addEventListener('mouseup', ()=> {
+    keynote.parentNode.style.color = ''
+  })
+})
+
 // Write named functions that change the color of the keys below
 function keyPlay(e){
     e.target.style.backgroundColor = 'crimson';
