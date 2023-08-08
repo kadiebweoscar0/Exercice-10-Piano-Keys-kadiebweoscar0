@@ -7,96 +7,28 @@ keys.forEach(function(key){
   notes.push(document.getElementById(key));
 })
 
-//branch dev
 // Write named functions that change the color of the keys below
-const ckey = document.getElementById("c-key");
-const dkey = document.getElementById("d-key");
-const ekey = document.getElementById("e-key");
-const fkey = document.getElementById("f-key");
-const gkey = document.getElementById("g-key");
-const akey = document.getElementById("a-key");
-const bkey = document.getElementById("b-key");
-const highCKey = document.getElementById("high-c-key");
-
-// Write a named function with event handler properties
-//create a function KeyPlay
-function keyPlay(){
-  ckey.addEventListener('mousedown', function (event){
-    event.target.style.backgroundColor = 'crimson';
+function keyPlay(e){
+  e.addEventListener('mousedown', function (){
+    e.target.style.backgroundColor = 'crimson';
   });
-  
-  dkey.addEventListener('mousedown', function (event){
-    event.target.style.backgroundColor = 'crimson';
-  });
-  
-  ekey.addEventListener('mousedown', function (event){
-    event.target.style.backgroundColor = 'crimson';
-  });
-  
-  fkey.addEventListener('mousedown', function (event){
-    event.target.style.backgroundColor = 'crimson';
-  });
-  
-  gkey.addEventListener('mousedown', function (event){
-    event.target.style.backgroundColor = 'crimson';
-  });
-  
-  akey.addEventListener('mousedown', function (event){
-    event.target.style.backgroundColor = 'crimson';
-  });
-  
-  bkey.addEventListener('mousedown', function (event){
-    event.target.style.backgroundColor = 'crimson';
-  });
-  
-  highCKey.addEventListener('mousedown', function (event){
-    event.target.style.backgroundColor = 'crimson';
-  });
-  
 };
 
-//Create a function KeyReturn
-function KeyReturn(){
-  ckey.addEventListener('mouseup', function (event){
-    event.target.style.backgroundColor = '';
-  });
-  
-  dkey.addEventListener('mouseup', function (event){
-    event.target.style.backgroundColor = '';
-  });
-  
-  ekey.addEventListener('mouseup', function (event){
-    event.target.style.backgroundColor = '';
-  });
-  
-  fkey.addEventListener('mouseup', function (event){
-    event.target.style.backgroundColor = '';
-  });
-  
-  gkey.addEventListener('mouseup', function (event){
-    event.target.style.backgroundColor = '';
-  });
-  
-  akey.addEventListener('mouseup', function (event){
-    event.target.style.backgroundColor = '';
-  });
-  
-  bkey.addEventListener('mouseup', function (event){
-    event.target.style.backgroundColor = '';
-  });
-  
-  highCKey.addEventListener('mouseup', function (event){
-    event.target.style.backgroundColor = '';
+// Write a named function with event handler properties
+function keyReturn(e){
+  e.addEventListener('mouseup', function (){
+    e.target.style.backgroundColor = '';
   });
 };
 
 //create a function addEventTouch
 function addEventTouch(note) {
-  note.addEventListener('mousedown', keyPlay())
-  note.addEventListener('mouseup', KeyReturn())
+  note.addEventListener('mousedown', keyPlay)
+  note.addEventListener('mouseup', keyReturn)
 }
-// Write a loop that runs the array elements through the function
 
+// Write a loop that runs the array elements through the function
+notes.forEach(addEventTouch);
 
 // These variables store the buttons that progress the user through the lyrics
 let nextOne = document.getElementById('first-next-line');
