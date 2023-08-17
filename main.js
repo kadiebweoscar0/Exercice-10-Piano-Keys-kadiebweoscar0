@@ -33,14 +33,6 @@ keynotes.forEach(function(keynote){
 })
 
 // Write named functions that change the color of the keys below
-function keyPlay(e){
-    e.target.style.backgroundColor = 'crimson';
-};
-
-// Write a named function with event handler properties
-function keyReturn(e){
-    e.target.style.backgroundColor = '';
-};
 
 //create a function addEventTouch
 function addEventTouch(note) {
@@ -94,7 +86,7 @@ nextThree.addEventListener('click', () =>{
   document.getElementById('letter-note-one').innerHTML = 'F';
   document.getElementById('word-two').innerHTML = 'PY';
   document.getElementById('letter-note-two').innerHTML = 'F';
-  document.getElementById('word-three').innerHTML = 'BIRTH';
+  document.getElementById('word-three').innerHTML = 'BIRTH-';
   document.getElementById('letter-note-three').innerHTML = 'E';
   document.getElementById('word-four').innerHTML = 'DAY';
   document.getElementById('letter-note-four').innerHTML = 'C  ';
@@ -121,4 +113,5 @@ startOver.onclick = function() {
   document.getElementById('letter-note-five').innerHTML = 'C';
   document.getElementById('word-six').innerHTML = 'YOU!';
   document.getElementById('letter-note-six').innerHTML = 'B';
+  lastLyric.style.display = 'none';
 }
